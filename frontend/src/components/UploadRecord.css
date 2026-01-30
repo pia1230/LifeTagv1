@@ -1,0 +1,22 @@
+/* src/components/UploadRecord.css */
+.file-input::file-selector-button {
+  background-color: #FFFFFF;
+  color: #111;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-right: 1rem;
+}
+
+.file-input::file-selector-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+}
