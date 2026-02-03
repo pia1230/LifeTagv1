@@ -42,3 +42,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+/Users/samikshapawar/Downloads/Life---Tag---1-main/backend/node_modules
+/Users/samikshapawar/Downloads/Life---Tag---1-main/backend/.env
+/Users/samikshapawar/Downloads/Life---Tag---1-main/backend/.env.example
+/Users/samikshapawar/Downloads/Life---Tag---1-main/backend/env.sample
+/Users/samikshapawar/Downloads/LifeTag.v1/frontend/node_modules
+/Users/samikshapawar/Downloads/LifeTag.v1/frontend/public/robots.txt
