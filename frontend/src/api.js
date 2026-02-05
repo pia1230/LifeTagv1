@@ -1,15 +1,13 @@
 import axios from 'axios';
 
-
-
-// This is your backend's base URL
-const BASE_URL = 'http://localhost:8080/api';
+// Backend base URL (from env)
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const apiClient = axios.create({
   baseURL: BASE_URL,
 });
 
-// Add request interceptor to attach token
+// Attach JWT token automatically
 apiClient.interceptors.request.use(
   (config) => {
     const authData = localStorage.getItem('lifetag-auth');
@@ -25,9 +23,7 @@ apiClient.interceptors.request.use(
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 export default apiClient;
