@@ -1,50 +1,58 @@
-# Dependencies
+# ===============================
+# Node dependencies
+# ===============================
+backend/node_modules/
+frontend/node_modules/
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# Production builds
-/frontend/build
-/backend/dist
-
-# Environment variables
+# ===============================
+# Environment files
+# ===============================
+backend/.env
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-# Logs
-*.log
-backend.log
-frontend.log
-
-# Database
+# ===============================
+# Database files
+# ===============================
+backend/database.sqlite
 *.sqlite
+*.sqlite3
 *.db
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# ===============================
+# Logs & PID files
+# ===============================
+*.log
+backend.pid
+npm-debug.log*
+yarn-error.log*
 
-# IDE files
+# ===============================
+# Frontend build output
+# ===============================
+frontend/build/
+frontend/dist/
+
+# ===============================
+# Backend build output
+# ===============================
+backend/dist/
+
+# ===============================
+# IDE / Editor settings
+# ===============================
 .vscode/
 .idea/
-*.swp
-*.swo
 
-# Temporary files
-*.tmp
-*.temp
-/Users/samikshapawar/Downloads/Life---Tag---1-main/backend/node_modules
-/Users/samikshapawar/Downloads/Life---Tag---1-main/backend/.env
-/Users/samikshapawar/Downloads/Life---Tag---1-main/backend/.env.example
-/Users/samikshapawar/Downloads/Life---Tag---1-main/backend/env.sample
-/Users/samikshapawar/Downloads/LifeTag.v1/frontend/node_modules
-/Users/samikshapawar/Downloads/LifeTag.v1/frontend/public/robots.txt
+# ===============================
+# OS generated files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Cache / temp files
+# ===============================
+.cache/
+.tmp/
+.eslintcache
